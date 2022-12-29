@@ -11,37 +11,36 @@ recognition.onresult=function(event){
     content=event.results[0][0].transcript;
     console.log(content);
     document.getElementById("textbox").innerHTML=content;
-}
-
     if(content=="take my selfie"){
         console.log("taking selfie");
         speak();
     }
 
+}
+
+   
 function speak(){
     synth=window.speechSynthesis;
-    speak_data="Taking your selfies in 10  seconds";
+    speak_data="Taking your selfies in 5 seconds";
     utterthis=new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterthis);
     
     setTimeout(function(){
         take_snapshot();
         save();
-    },5000,);
+    },2000);
+    
+    setTimeout(function(){
+        take_snapshot();
+        save();
+    },3000);
+    
+    setTimeout(function() {
+        take_snapshot();
+        save();
+    },5000);
     Webcam.attach(camera);
 }
-
-setTimeout(function(){
-    take_snapshot();
-    save();
-},7500,);
-Webcam.attach(camera);
-
-setTimeout(function(){
-    take_snapshot();
-    save();
-},9000,);
-Webcam.attach(camera);
 
 
 

@@ -1,0 +1,25 @@
+#result1{
+    width: 100px;
+}
+#result2{
+    width: 100px;
+    height: 50px;
+}
+#result3{
+    width: 50px;
+    height: 20px;
+}
+
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+h4{
+    color: aqua;
+    text-shadow: 0cm;
+}
+#right_footer{
+    position: fixed;
+    width: 50px;
+    font-style: italic;
+}
